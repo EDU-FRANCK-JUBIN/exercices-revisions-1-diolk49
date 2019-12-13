@@ -119,7 +119,7 @@ def bike(a, start = (0,0), size=200, color = "black", wheel_color="black"):
   a.right(120)
   a.forward(size/2)
 
-arbre(a, start=(500, 0))
+arbre(a, start=(400, 0))
 
 bike(a, color="orange", wheel_color="yellow")
 
@@ -128,5 +128,12 @@ roue(a, (-20, 300), 30, "blue")
 roue(a, (60, 310), 30, "blue")
 roue(a, (100, 240), 30, "blue")
 roue(a, (140, 320), 30, "blue")
+
+a.up()
+a.setpos(-100,0)
+a.setheading(0)
+a.pencolor("black")
+a.down()
+a.forward(600)
 
 tu.done()
